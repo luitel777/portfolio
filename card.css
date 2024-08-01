@@ -1,0 +1,22 @@
+
+.card{
+  font-size: 1.3em;
+  margin: 10%;
+  padding-top: 0%;
+  font-family: monospace;
+  background-color: black;
+  color: white;
+  text-align: left;
+}
+
+
+#block{
+  color: green;
+}
+
+.title{
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  background-color: gray;
+}

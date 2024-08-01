@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Iosevka";
+  src: url("./font/Iosevka-Regular.woff2") format("woff"),
+  url("./font/Iosevka-Bold.woff2") format("woff"),
+  url("./font/Iosevka-Italic.woff2") format("woff");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Iosevka";
+}
+
+body {
+  margin-top: 1%;
+}
+
+#header-name {
+  margin-left: 1%;
+  font-size: 2.3em;
+}
+
+#nav-info {
+  margin-right: 1%;
+  font-size: 2.3em;
+  float: right;
+  color: black;
+}
+
+a:link {
+  color: black;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+hr {
+  border: 3px solid black;
+}

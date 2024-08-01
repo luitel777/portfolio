@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>contact</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./contact.css">
+  <link rel="stylesheet" href="./global.css">
+</head>
+
+<body>
+  <header>
+    <span id="header-name" style="position:sticky">
+      <a href="/">Aagaman Luitel</a>
+    </span>
+    <span id="nav-info">
+      <a href="./projects.html">projects</a>
+      <a href="./card.html">skills</a>
+      <a href="./contact.html">contact</a>
+    </span>
+  </header>
+  <br>
+  <hr>
+
+  <div class="contact">
+  <ul>
+    <li>
+      Name: Aagaman Luitel
+    </li>
+    <li>
+      Age: <label id="age"></label>
+    </li>
+    <li>
+      Email:
+      <li>
+      &emsp;<a href="mail:mail@luitelaagaman.com.np">mail@luitelaagaman.com.np</a> (google)
+      </li>
+      <li>
+      &emsp;<a href="mail:luitelaagaman@pm.me">luitelaagaman@pm.me</a> (protonmail)
+      </li>
+    </li>
+    <li>
+      Github: <a href="https://github.com/luitel777">luitel777</a>
+    </li>
+    <li>
+      Discord: spacewarrior777
+    </li>
+    <li>
+      Matrix: @spacewarrior:matrix.org
+    </li>
+  </ul>
+  <div class=tagline>
+    I can't live like Diogenes. Hire me please <3
+  </div>
+  </div>
+
+</body>
+
+</html>
+
+<script>
+// divide by 1000 since date.now gives on milliseconds
+today_date = Math.floor(Date.now() / 1000)
+
+// https://stackoverflow.com/a/11893157
+my_birthday = Math.floor(new Date('2003.09.30').getTime() / 1000)
+
+my_unix_age = today_date - my_birthday
+
+// One year = 31,536,000 in UNIX time.
+age.innerText = (my_unix_age / 31536000).toFixed(2)
+
+</script>

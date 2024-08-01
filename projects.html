@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Aagaman Luitel</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./global.css">
+  <link rel="stylesheet" href="./projects.css">
+</head>
+
+<body>
+  <header>
+    <span id="header-name" style="position:sticky">
+      <a href="/">Aagaman Luitel</a>
+    </span>
+    <span id="nav-info">
+      <a href="./projects.html">projects</a>
+      <a href="./card.html">skills</a>
+      <a href="./contact.html">contact</a>
+    </span>
+  </header>
+  <br>
+  <hr>
+  <table id="projects">
+    <tr>
+      <th>
+        Name
+      </th>
+      <th>
+        Description
+      </th>
+      <th>
+        Languages
+      </th>
+      <th>
+        Creation Date
+      </th>
+    </tr>
+    <tbody id="project_items">
+    </tbody>
+  </table>
+</body>
+
+</html>
+
+<script>
+  let items = [
+    [
+      'Takakura',
+      'A social media platform for developers',
+      'Go, React, Postgres',
+      'TBD'
+    ],
+    [
+      'Cid',
+      'NLP based chatbot with text, image and speech support',
+      'Python, Go, Pytorch',
+      '2024-08-01'
+    ],
+    [
+      'Purkheli',
+      'Self hosted anonymous forum with image and commenting system with server side form validation',
+      'Go, Sqlite',
+      '2024-06-22'
+    ],
+    [
+      'Weatheria',
+      'Weather ecosystem hosted locally',
+      'Java, Esp32, Springboot, Highcharts',
+      '2024-05-30'
+    ],
+    [
+      'Manga Server',
+      'Self hosted manga reader supporting zip and cbz archives',
+      'Go, Sqlite, Chi',
+      '2024-01-10'
+    ],
+  ];
+
+  function createTable() {
+    let table_html = ""
+    for (i = 0; i < items.length; i++) {
+      table_html += `<tr>`
+      for (j = 0; j < items[i].length; j++) {
+        table_html += `<td>${items[i][j]}</td>`
+      }
+      table_html += `</tr>`
+    }
+      project_items.innerHTML = table_html
+  }
+
+  createTable()
+
+
+  /*
+    project_items.innerHTML += `
+        <tr>
+          <td>Example</td>
+          <td>Example website using NLP framework by pytorch</td>
+          <td>Python, Pytorch, Go</td>
+          <td>2024-01-10</td>
+        </tr>
+    `
+    */
+</script>
